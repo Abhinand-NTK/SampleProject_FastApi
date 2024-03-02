@@ -11,40 +11,44 @@ Installation
 
 
 First, let's install FastAPI and uvicorn using pip:
+--------------------------------------------------
 
-pip install fastapi uvicorn
+1, pip install fastapi uvicorn
+
 Optionally, you can install uvicorn with additional standard dependencies:
+---------------------------------------------------------------------
 
 
-pip install uvicorn[standard]
+1.Additional, pip install uvicorn[standard]
+
 Project Initialization
-
------------------------------------------------------------------------------------------------------------------------
-
+-------------------------
 
 Create a new directory for your project:
 ----------------------------------------
 
-mkdir my_fastapi_project
-cd my_fastapi_project
+2, mkdir my_fastapi_project
+3, cd my_fastapi_project
 Inside the project directory, create a new Python file, for example, main.py.
+
+4, echo .> filename
 
 Open main.py in your preferred code editor and import FastAPI:
 --------------------------------------------------------------
 
 
-import fastapi
-from fastapi import FastAPI
+5, import fastapi
+   from fastapi import FastAPI
 
 # Create an instance of FastAPI
-app = FastAPI()
-Running the Application
+6, app = FastAPI()
+   Running the Application
 
 
 To run your FastAPI application, use uvicorn:
 ----------------------------------------------
 
-uvicorn main:app --reload
+7, uvicorn main:app --reload
 Here, main refers to the name of your Python file (main.py) and app is the instance of FastAPI created in your file.
 
 Accessing the API Documentation
